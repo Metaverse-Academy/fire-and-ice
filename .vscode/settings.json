@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "fire-and-ice.sln"
+    "dotnet.defaultSolution": "Fire and Ice.sln"
 }
