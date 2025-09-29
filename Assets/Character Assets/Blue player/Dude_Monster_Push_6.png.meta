@@ -1,40 +1,25 @@
 fileFormatVersion: 2
-guid: 99a0699d057c4cf478161d702daf1bea
+guid: 923fb3a6679d0944f8efa4849d4c363d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -415694796541141570
-    second: Pink_Monster_Death_8_0
+      213: -1445932180357870856
+    second: Dude_Monster_Push_6_0
   - first:
-      213: 8354886380103956514
-    second: Pink_Monster_Death_8_1
+      213: -5428375716064078105
+    second: Dude_Monster_Push_6_1
   - first:
-      213: -2651731702063500372
-    second: Pink_Monster_Death_8_2
+      213: 4704959720257544982
+    second: Dude_Monster_Push_6_2
   - first:
-      213: -8177007171791698425
-    second: Pink_Monster_Death_8_3
+      213: -8402933157243744402
+    second: Dude_Monster_Push_6_3
   - first:
-      213: -1282923075553524505
-    second: Pink_Monster_Death_8_4
+      213: -5380032740822530951
+    second: Dude_Monster_Push_6_4
   - first:
-      213: 3644297655231199613
-    second: Pink_Monster_Death_8_5
-  - first:
-      213: 2752458482648294865
-    second: Pink_Monster_Death_8_6
-  - first:
-      213: -1722521565084019806
-    second: Pink_Monster_Death_8_7
-  - first:
-      213: 3109424625067125925
-    second: Pink_Monster_Death_8_8
-  - first:
-      213: 8218414721423395914
-    second: Pink_Monster_Death_8_9
-  - first:
-      213: 3476710940420842824
-    second: Pink_Monster_Death_8_10
+      213: 7855648944957611626
+    second: Dude_Monster_Push_6_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -143,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pink_Monster_Death_8_0
+      name: Dude_Monster_Push_6_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 8
         y: 0
-        width: 23
-        height: 30
+        width: 22
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,42 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebddf25f8c72b3af0800000000000000
-      internalID: -415694796541141570
+      spriteID: 8fa8674c7540febe0800000000000000
+      internalID: -1445932180357870856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Death_8_1
+      name: Dude_Monster_Push_6_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 1
-        width: 24
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22878d885e482f370800000000000000
-      internalID: 8354886380103956514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Death_8_2
-      rect:
-        serializedVersion: 2
-        x: 66
+        x: 41
         y: 0
-        width: 27
-        height: 22
+        width: 21
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca3fcd20118233bd0800000000000000
-      internalID: -2651731702063500372
+      spriteID: 7e6d4a80c098aa4b0800000000000000
+      internalID: -5428375716064078105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Death_8_3
+      name: Dude_Monster_Push_6_2
       rect:
         serializedVersion: 2
-        x: 97
+        x: 73
         y: 0
-        width: 31
-        height: 12
+        width: 21
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 706c8870d4f658e80800000000000000
-      internalID: -8177007171791698425
+      spriteID: 613e87800ff5b4140800000000000000
+      internalID: 4704959720257544982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Death_8_4
+      name: Dude_Monster_Push_6_3
       rect:
         serializedVersion: 2
-        x: 127
+        x: 105
         y: 0
-        width: 8
-        height: 8
+        width: 21
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e40b7f8244223ee0800000000000000
-      internalID: -1282923075553524505
+      spriteID: e6f822b60d8c26b80800000000000000
+      internalID: -8402933157243744402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Death_8_5
+      name: Dude_Monster_Push_6_4
       rect:
         serializedVersion: 2
-        x: 135
+        x: 137
         y: 0
-        width: 19
-        height: 13
+        width: 21
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,64 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7938dbb865239230800000000000000
-      internalID: 3644297655231199613
+      spriteID: 9744d431ab84655b0800000000000000
+      internalID: -5380032740822530951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Death_8_6
-      rect:
-        serializedVersion: 2
-        x: 152
-        y: 0
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d523452862b23620800000000000000
-      internalID: 2752458482648294865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Death_8_7
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 6
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2a3973b43cf5818e0800000000000000
-      internalID: -1722521565084019806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Death_8_8
+      name: Dude_Monster_Push_6_5
       rect:
         serializedVersion: 2
         x: 169
         y: 0
-        width: 16
-        height: 7
+        width: 21
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,52 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ac6af8d835e62b20800000000000000
-      internalID: 3109424625067125925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Death_8_9
-      rect:
-        serializedVersion: 2
-        x: 185
-        y: 3
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a4c484765acad0270800000000000000
-      internalID: 8218414721423395914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Death_8_10
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 56
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 845af7e0e22cf3030800000000000000
-      internalID: 3476710940420842824
+      spriteID: a6ede5c281fd40d60800000000000000
+      internalID: 7855648944957611626
       vertices: []
       indices: 
       edges: []
@@ -398,17 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pink_Monster_Death_8_0: -415694796541141570
-      Pink_Monster_Death_8_1: 8354886380103956514
-      Pink_Monster_Death_8_10: 3476710940420842824
-      Pink_Monster_Death_8_2: -2651731702063500372
-      Pink_Monster_Death_8_3: -8177007171791698425
-      Pink_Monster_Death_8_4: -1282923075553524505
-      Pink_Monster_Death_8_5: 3644297655231199613
-      Pink_Monster_Death_8_6: 2752458482648294865
-      Pink_Monster_Death_8_7: -1722521565084019806
-      Pink_Monster_Death_8_8: 3109424625067125925
-      Pink_Monster_Death_8_9: 8218414721423395914
+      Dude_Monster_Push_6_0: -1445932180357870856
+      Dude_Monster_Push_6_1: -5428375716064078105
+      Dude_Monster_Push_6_2: 4704959720257544982
+      Dude_Monster_Push_6_3: -8402933157243744402
+      Dude_Monster_Push_6_4: -5380032740822530951
+      Dude_Monster_Push_6_5: 7855648944957611626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
