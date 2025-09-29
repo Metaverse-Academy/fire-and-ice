@@ -1,10 +1,12 @@
-using UnityEngine;
+using UnityEngine; 
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(PlayerInput))]
 public class PlayerMovement : MonoBehaviour
 {
+    public enum AllowedShotDirection { Left = -1, Right = 1 }
+
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 6f;
     [SerializeField] private Transform groundCheckTransform;
@@ -15,11 +17,18 @@ public class PlayerMovement : MonoBehaviour
     [Header("Shooting / Charge")]
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Transform projectileSpawn;
-    [SerializeField] private float launchSpeed = 14f;     // constant speed
-    [SerializeField] private float maxChargeTime = 1.0f;  // hold time to reach full range
+    [SerializeField] private float launchSpeed = 14f;      // keep constant so charge only affects distance
+    [SerializeField] private float maxChargeTime = 1.0f;   // hold to get more distance
     [SerializeField] private float postShotCooldown = 0.15f;
     [Tooltip("x = forward; y = up. Set y = 0 for straight shot.")]
     [SerializeField] private Vector2 launchAngle = new Vector2(1f, 0f);
+
+    [Header("Shooting Rules")]
+    [SerializeField] private AllowedShotDirection allowedShotDirection = AllowedShotDirection.Right;
+    // Set left player's to Right; right player's to Left.
+
+    [Header("Force Bar (optional)")]
+    [SerializeField] private ForceBarAdapter forceBar; // drag your bar adapter here if you want a bar
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
@@ -30,10 +39,7 @@ public class PlayerMovement : MonoBehaviour
     private float chargeStart = 0f;
     private float nextAllowedShootTime = 0f;
 
-    // facing (1 right, -1 left)
-    private int facingDir = 1;
-
-    // for UI bars
+    // for UI bars (0..1 while holding)
     public float CurrentCharge01 { get; private set; } = 0f;
 
     // owner id for friendly-fire avoidance
@@ -49,24 +55,21 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheckTransform.position, checkRadius, groundLayer);
+
         if (isCharging)
+        {
             CurrentCharge01 = Mathf.Clamp01((Time.time - chargeStart) / maxChargeTime);
+            if (forceBar) forceBar.SetValue(CurrentCharge01); // live update
+        }
     }
 
     private void FixedUpdate()
     {
-        // Unity 6 helper: horizontal only
+        // Unity 6 horizontal helper
         rb.linearVelocityX = moveInput.x * moveSpeed;
-
-        if (moveInput.x > 0.01f)      facingDir = 1;
-        else if (moveInput.x < -0.01f) facingDir = -1;
-
-        // optional flip
-        var s = transform.localScale;
-        transform.localScale = new Vector3(Mathf.Abs(s.x) * facingDir, s.y, s.z);
     }
 
-    // Input System callbacks
+    // === Input System callbacks (work for both KBM and Gamepad via control schemes) ===
     public void Moving(InputAction.CallbackContext ctx) => moveInput = ctx.ReadValue<Vector2>();
 
     public void Jumping(InputAction.CallbackContext ctx)
@@ -75,31 +78,50 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
-    // Bind this to your "Fire" action (Button)
+    // Bind "Fire" (Button) in your actions asset
     public void Fire(InputAction.CallbackContext ctx)
     {
         if (ctx.started && Time.time >= nextAllowedShootTime)
         {
-            isCharging = true;
-            chargeStart = Time.time;
-            CurrentCharge01 = 0f;
+            StartCharge();
         }
         else if (ctx.canceled && isCharging)
         {
-            float t = Mathf.Clamp01((Time.time - chargeStart) / maxChargeTime); // 0..1
-            Shoot(launchSpeed, t);  // speed constant; t goes to projectile lifetime
-
-            isCharging = false;
-            CurrentCharge01 = 0f;
-            nextAllowedShootTime = Time.time + postShotCooldown;
+            ReleaseCharge();
         }
     }
 
+    // === UI BUTTON SUPPORT (for on-screen button) ===
+    public void UI_FireDown() { if (Time.time >= nextAllowedShootTime) StartCharge(); }
+    public void UI_FireUp()   { if (isCharging) ReleaseCharge(); }
+
+    private void StartCharge()
+    {
+        isCharging = true;
+        chargeStart = Time.time;
+        CurrentCharge01 = 0f;
+        if (forceBar) forceBar.Show(true);
+        if (forceBar) forceBar.SetValue(0f);
+    }
+
+    private void ReleaseCharge()
+    {
+        float t = Mathf.Clamp01((Time.time - chargeStart) / maxChargeTime); // 0..1
+        Shoot(launchSpeed, t);  // speed constant; t extends projectile lifetime
+        isCharging = false;
+        CurrentCharge01 = 0f;
+        if (forceBar) forceBar.Show(false);
+        nextAllowedShootTime = Time.time + postShotCooldown;
+    }
+
+    // === Enforced-direction shoot ===
     private void Shoot(float speed, float charge01)
     {
         if (!projectilePrefab || !projectileSpawn) return;
 
-        Vector2 dir = new Vector2(facingDir * Mathf.Abs(launchAngle.x), launchAngle.y).normalized;
+        // FORCE shot direction: left player -> Right, right player -> Left
+        int sign = (int)allowedShotDirection; // +1 or -1
+        Vector2 dir = new Vector2(sign * Mathf.Abs(launchAngle.x), launchAngle.y).normalized;
 
         GameObject go = Instantiate(projectilePrefab, projectileSpawn.position, Quaternion.identity);
         var proj = go.GetComponent<Projectile>();
@@ -125,3 +147,5 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawWireSphere(groundCheckTransform.position, checkRadius);
     }
 }
+
+
