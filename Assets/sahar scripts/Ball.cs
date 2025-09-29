@@ -3,6 +3,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     [Header("Ball Settings")]
+    [SerializeField] private int damage = 1;
     [SerializeField] private float lifeTime = 5f;
 
     void Start()
@@ -14,9 +15,12 @@ public class Ball : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //damage the player
+            var hp = collision.gameObject.GetComponent<Health>()
+                     ?? collision.gameObject.GetComponentInParent<Health>();
+            if (hp != null)
+                hp.TakeDamage(damage);
         }
-        
+
         Destroy(gameObject);
     }
 }
