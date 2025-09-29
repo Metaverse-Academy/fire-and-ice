@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 1167012314}
   - component: {fileID: 1167012313}
   m_Layer: 0
-  m_Name: fire&ice enviroment-03_0
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 1866038583}
   - component: {fileID: 1866038582}
   m_Layer: 0
-  m_Name: fire&ice enviroment-04_0
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -650,7 +650,7 @@ Transform:
   m_GameObject: {fileID: 1866038580}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -960, y: -542.7, z: 0}
+  m_LocalPosition: {x: -960.34, y: -542.7, z: 0}
   m_LocalScale: {x: 0.21, y: 0.21, z: 0.21}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -772,7 +772,7 @@ GameObject:
   - component: {fileID: 1951593376}
   - component: {fileID: 1951593375}
   m_Layer: 0
-  m_Name: fire&ice enviroment-01_0
+  m_Name: Ice base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -909,7 +909,7 @@ GameObject:
   - component: {fileID: 2141007407}
   - component: {fileID: 2141007406}
   m_Layer: 0
-  m_Name: fire&ice enviroment-02_0
+  m_Name: FireBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
