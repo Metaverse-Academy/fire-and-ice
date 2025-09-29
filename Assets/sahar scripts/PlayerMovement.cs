@@ -27,9 +27,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AllowedShotDirection allowedShotDirection = AllowedShotDirection.Right;
     // Set left player's to Right; right player's to Left.
 
-    [Header("Force Bar (optional)")]
-    [SerializeField] private ForceBarAdapter forceBar; // drag your bar adapter here if you want a bar
-
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private bool isGrounded;
@@ -55,12 +52,8 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheckTransform.position, checkRadius, groundLayer);
-
         if (isCharging)
-        {
             CurrentCharge01 = Mathf.Clamp01((Time.time - chargeStart) / maxChargeTime);
-            if (forceBar) forceBar.SetValue(CurrentCharge01); // live update
-        }
     }
 
     private void FixedUpdate()
@@ -69,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocityX = moveInput.x * moveSpeed;
     }
 
-    // === Input System callbacks (work for both KBM and Gamepad via control schemes) ===
+    // === Input System callbacks ===
     public void Moving(InputAction.CallbackContext ctx) => moveInput = ctx.ReadValue<Vector2>();
 
     public void Jumping(InputAction.CallbackContext ctx)
@@ -78,43 +71,26 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
-    // Bind "Fire" (Button) in your actions asset
+    // Bind in your Input Actions as "Fire" (Button)
     public void Fire(InputAction.CallbackContext ctx)
     {
         if (ctx.started && Time.time >= nextAllowedShootTime)
         {
-            StartCharge();
+            isCharging = true;
+            chargeStart = Time.time;
+            CurrentCharge01 = 0f;
         }
         else if (ctx.canceled && isCharging)
         {
-            ReleaseCharge();
+            float t = Mathf.Clamp01((Time.time - chargeStart) / maxChargeTime); // 0..1
+            Shoot(launchSpeed, t); // speed constant; t will extend projectile lifetime
+            isCharging = false;
+            CurrentCharge01 = 0f;
+            nextAllowedShootTime = Time.time + postShotCooldown;
         }
     }
 
-    // === UI BUTTON SUPPORT (for on-screen button) ===
-    public void UI_FireDown() { if (Time.time >= nextAllowedShootTime) StartCharge(); }
-    public void UI_FireUp()   { if (isCharging) ReleaseCharge(); }
-
-    private void StartCharge()
-    {
-        isCharging = true;
-        chargeStart = Time.time;
-        CurrentCharge01 = 0f;
-        if (forceBar) forceBar.Show(true);
-        if (forceBar) forceBar.SetValue(0f);
-    }
-
-    private void ReleaseCharge()
-    {
-        float t = Mathf.Clamp01((Time.time - chargeStart) / maxChargeTime); // 0..1
-        Shoot(launchSpeed, t);  // speed constant; t extends projectile lifetime
-        isCharging = false;
-        CurrentCharge01 = 0f;
-        if (forceBar) forceBar.Show(false);
-        nextAllowedShootTime = Time.time + postShotCooldown;
-    }
-
-    // === Enforced-direction shoot ===
+    // === YOUR UPDATED SHOOT METHOD (forced direction) ===
     private void Shoot(float speed, float charge01)
     {
         if (!projectilePrefab || !projectileSpawn) return;
@@ -147,5 +123,7 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawWireSphere(groundCheckTransform.position, checkRadius);
     }
 }
+
+
 
 

@@ -584,17 +584,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7835848153136839960, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
   m_PrefabInstance: {fileID: 1136987277}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &644133533 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2550807475742641117, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
-  m_PrefabInstance: {fileID: 1136987277}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644133530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f71bfb99086d0b4383e2c2a8719273e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
 --- !u!1 &863742006
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +775,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1516102810687508979, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: -1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1516102810687508979, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -824,9 +813,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2550807475742641117, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
-      propertyPath: forceBar
-      value: 
+    - target: {fileID: 2173869441325315372, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.21
       objectReference: {fileID: 0}
     - target: {fileID: 7835848153136839960, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: m_Name
@@ -842,17 +831,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8563951145595362779, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
   m_PrefabInstance: {fileID: 1216482100}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1152616997 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 917291255876604266, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
-  m_PrefabInstance: {fileID: 1216482100}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152616994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f71bfb99086d0b4383e2c2a8719273e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
 --- !u!1001 &1216482100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -901,13 +879,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 917291255876604266, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
-      propertyPath: forceBar
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 917291255876604266, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
-      propertyPath: allowedShotDirection
-      value: -1
+    - target: {fileID: 1078768884760379237, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.24
       objectReference: {fileID: 0}
     - target: {fileID: 8563951145595362779, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: m_Name
@@ -1068,7 +1042,7 @@ GameObject:
   - component: {fileID: 1460979613}
   - component: {fileID: 1460979612}
   m_Layer: 5
-  m_Name: Button
+  m_Name: left player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1111,7 +1085,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 644133533}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
           m_MethodName: UI_FireDown
           m_Mode: 1
@@ -1127,7 +1101,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 644133533}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
           m_MethodName: UI_FireUp
           m_Mode: 1
@@ -1235,7 +1209,7 @@ GameObject:
   - component: {fileID: 1476179045}
   - component: {fileID: 1476179044}
   m_Layer: 5
-  m_Name: Button
+  m_Name: 'right player '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1278,7 +1252,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1152616997}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
           m_MethodName: UI_FireDown
           m_Mode: 1
@@ -1294,7 +1268,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1152616997}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
           m_MethodName: UI_FireUp
           m_Mode: 1
@@ -1496,7 +1470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1826127714
 BoxCollider2D:
   m_ObjectHideFlags: 0

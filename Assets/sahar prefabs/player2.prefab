@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3673584849690535243}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.433, y: 0, z: 0}
+  m_LocalPosition: {x: -0.18, y: 0.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74,12 +74,12 @@ GameObject:
   - component: {fileID: 2296978538070895597}
   - component: {fileID: 6109677519246576155}
   - component: {fileID: 5266070746648800189}
-  - component: {fileID: 917291255876604266}
   - component: {fileID: 7150327171814698947}
   - component: {fileID: 5806908036236644283}
-  m_Layer: 0
+  - component: {fileID: 4660934613872681537}
+  m_Layer: 8
   m_Name: player2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,32 +222,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &917291255876604266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8563951145595362779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f71bfb99086d0b4383e2c2a8719273e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveSpeed: 6
-  groundCheckTransform: {fileID: 8159865966867428881}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  checkRadius: 0.15
-  jumpForce: 13
-  projectilePrefab: {fileID: 8375622985378646298, guid: 1843729c62611b34db4c570b323fbae5, type: 3}
-  projectileSpawn: {fileID: 1078768884760379237}
-  minLaunchSpeed: 14
-  maxLaunchSpeed: 14
-  maxChargeTime: 1.1
-  postShotCooldown: 0.15
-  launchAngle: {x: 1, y: 0}
 --- !u!114 &7150327171814698947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,35 +256,11 @@ MonoBehaviour:
     m_ActionId: 98eccd9e-5d2c-4241-b0e8-529d90a703ea
     m_ActionName: 'player1/jump[/Keyboard/space]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 917291255876604266}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
-        m_MethodName: Moving
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 4f3baff3-8f58-45cd-8939-d205e9ef4810
     m_ActionName: 'player2/move[/DualSenseGamepadHID/leftStick]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 917291255876604266}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
-        m_MethodName: Jumping
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 8cd749c5-49e0-4dfa-af58-dee2a95a99b5
     m_ActionName: 'player2/jump[/DualSenseGamepadHID/buttonSouth]'
   - m_PersistentCalls:
@@ -319,9 +269,9 @@ MonoBehaviour:
     m_ActionName: 'player1/fire[/Mouse/rightButton]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 917291255876604266}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
-        m_MethodName: Fire
+      - m_Target: {fileID: 4660934613872681537}
+        m_TargetAssemblyTypeName: BallLauncher, Assembly-CSharp
+        m_MethodName: OnBallTrigger
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -357,3 +307,19 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4660934613872681537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8563951145595362779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b12cb6614f4270940bd776756cc2c9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BallLauncher
+  ballPrefab: {fileID: 8375622985378646298, guid: 1843729c62611b34db4c570b323fbae5, type: 3}
+  launchForce: 10
+  firePoint: {fileID: 1078768884760379237}
+  launchDirection: {x: -1, y: 2}

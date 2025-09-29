@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2655381226798189872}
   - component: {fileID: 6377027056410893751}
   - component: {fileID: 6606575104316637045}
-  - component: {fileID: 2791865680631381291}
+  - component: {fileID: 3087045203051011120}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -123,7 +123,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -144,7 +144,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -156,7 +156,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &2791865680631381291
+--- !u!114 &3087045203051011120
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,19 +165,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8375622985378646298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7493e1138c04f9341b20c2debe160102, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d4e3663fe83ee949ae595a8edd7920e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Projectile
+  m_EditorClassIdentifier: Assembly-CSharp::Ball
   damage: 1
-  baseLifeTime: 3
-  extraLifeAtFull: 2
-  turnDegreesPerSecond: 260
-  maxSpeed: 24
-  acceleration: 0
-  gravityScale: 0
-  wallLayers:
-    serializedVersion: 2
-    m_Bits: 128
-  lookAhead: 1.1
-  sideProbe: 0.6
-  avoidTurn: 40
+  lifeTime: 5
