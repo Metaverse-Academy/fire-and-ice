@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
 
     public UnityEvent onDamaged;
     public UnityEvent onDeath;
+    public int MaxHealth => maxHealth;   
 
     void Awake()
     {
