@@ -420,6 +420,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  shakeData: {fileID: 11400000, guid: c1195e56b6073304db74b9c7c50fa5af, type: 2}
 --- !u!114 &4660934613872681537
 MonoBehaviour:
   m_ObjectHideFlags: 0

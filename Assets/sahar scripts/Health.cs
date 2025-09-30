@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using FirstGearGames.SmoothCameraShaker;
 
 public class Health : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class Health : MonoBehaviour
 
     public UnityEvent onDamaged;
     public UnityEvent onDeath;
-    public int MaxHealth => maxHealth;   
+    public int MaxHealth => maxHealth;
+    public ShakeData shakeData; 
 
     void Awake()
     {
@@ -21,6 +23,7 @@ public class Health : MonoBehaviour
 
         CurrentHealth = Mathf.Max(0, CurrentHealth - amount);
         onDamaged?.Invoke();
+        CameraShakerHandler.Shake(shakeData);
 
         if (CurrentHealth <= 0)
         {
