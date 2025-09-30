@@ -340,22 +340,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -2809261519264013853, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
-      propertyPath: m_Size.x
-      value: 0.20513059
-      objectReference: {fileID: 0}
-    - target: {fileID: -2809261519264013853, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
-      propertyPath: m_Size.y
-      value: 0.29497072
-      objectReference: {fileID: 0}
-    - target: {fileID: -2809261519264013853, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0134454975
-      objectReference: {fileID: 0}
-    - target: {fileID: -2809261519264013853, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.006295379
-      objectReference: {fileID: 0}
     - target: {fileID: 442766119705813318, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.74
@@ -695,30 +679,6 @@ PrefabInstance:
     - target: {fileID: 1516102810687508979, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2173869441325315372, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.133
-      objectReference: {fileID: 0}
-    - target: {fileID: 2173869441325315372, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.038
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787358730174899715, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
-      propertyPath: m_Size.x
-      value: 0.16779804
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787358730174899715, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
-      propertyPath: m_Size.y
-      value: 0.26585805
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787358730174899715, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0030152083
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787358730174899715, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.0068830107
       objectReference: {fileID: 0}
     - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: chargeBar
@@ -1304,7 +1264,7 @@ MonoBehaviour:
   canvas: {fileID: 1533656213}
   announceWinnerOnDeath1: {fileID: 624390305}
   announceWinnerOnDeath2: {fileID: 288730165}
-  deathAnimLength: 0.38
+  deathAnimLength: 0.12
 --- !u!4 &882668877
 Transform:
   m_ObjectHideFlags: 0
