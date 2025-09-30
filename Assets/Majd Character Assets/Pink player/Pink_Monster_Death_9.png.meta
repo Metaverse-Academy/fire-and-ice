@@ -1,25 +1,40 @@
 fileFormatVersion: 2
-guid: a2f84ad5adfd61c469ef6bc51d6f519e
+guid: 53bcdaaf35a16464cbe6f09daa244c0b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7482435820125559580
-    second: Pink_Monster_Attack2_6_0
+      213: 8329684037211562438
+    second: Pink_Monster_Death_9_0
   - first:
-      213: -1981500011118924899
-    second: Pink_Monster_Attack2_6_1
+      213: 4328198357293265824
+    second: Pink_Monster_Death_9_1
   - first:
-      213: -2577680928909753937
-    second: Pink_Monster_Attack2_6_2
+      213: 8495727118615821680
+    second: Pink_Monster_Death_9_2
   - first:
-      213: 5244508403627165712
-    second: Pink_Monster_Attack2_6_3
+      213: 4347019618551767408
+    second: Pink_Monster_Death_9_3
   - first:
-      213: -3366425783080637560
-    second: Pink_Monster_Attack2_6_4
+      213: -1886383683369577870
+    second: Pink_Monster_Death_9_4
   - first:
-      213: 3689060607441623611
-    second: Pink_Monster_Attack2_6_5
+      213: 5541490398626548489
+    second: Pink_Monster_Death_9_5
+  - first:
+      213: -6797324140690594515
+    second: Pink_Monster_Death_9_6
+  - first:
+      213: -202478734452387354
+    second: Pink_Monster_Death_9_7
+  - first:
+      213: -8265405096055666392
+    second: Pink_Monster_Death_9_8
+  - first:
+      213: 8900777091541037774
+    second: Pink_Monster_Death_9_9
+  - first:
+      213: -3002487619959327751
+    second: Pink_Monster_Death_9_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,133 +143,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pink_Monster_Attack2_6_0
+      name: Pink_Monster_Death_9_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 19
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1ac31df7bf89370800000000000000
+      internalID: 8329684037211562438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Death_9_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3
+        width: 30
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e4e1c6e34c092890800000000000000
-      internalID: -7482435820125559580
+      spriteID: 0a3f4e36979d01c30800000000000000
+      internalID: 4328198357293265824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Attack2_6_1
+      name: Pink_Monster_Death_9_2
       rect:
         serializedVersion: 2
-        x: 37
-        y: 0
-        width: 19
-        height: 27
+        x: 66
+        y: 2
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9be2d20d3c4084e0800000000000000
-      internalID: -1981500011118924899
+      spriteID: 07dbfb55dc2e6e570800000000000000
+      internalID: 8495727118615821680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Attack2_6_2
+      name: Pink_Monster_Death_9_3
       rect:
         serializedVersion: 2
-        x: 69
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071ae63cf47b35c30800000000000000
+      internalID: 4347019618551767408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Death_9_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272d9a2d80832d5e0800000000000000
+      internalID: -1886383683369577870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Death_9_5
+      rect:
+        serializedVersion: 2
+        x: 164
         y: 0
         width: 28
-        height: 28
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa109003adc3a3cd0800000000000000
-      internalID: -2577680928909753937
+      spriteID: 90b8f50582457ec40800000000000000
+      internalID: 5541490398626548489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Attack2_6_3
+      name: Pink_Monster_Death_9_6
       rect:
         serializedVersion: 2
-        x: 102
+        x: 192
         y: 0
-        width: 20
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0188fb34b9c38c840800000000000000
-      internalID: 5244508403627165712
+      spriteID: d2523f235bd0ba1a0800000000000000
+      internalID: -6797324140690594515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Attack2_6_4
+      name: Pink_Monster_Death_9_7
       rect:
         serializedVersion: 2
-        x: 135
+        x: 224
         y: 0
-        width: 24
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88b23cc169d0841d0800000000000000
-      internalID: -3366425783080637560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Attack2_6_5
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 0
-        width: 19
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b3ad175b31d223330800000000000000
-      internalID: 3689060607441623611
+      spriteID: 6e1156ee9a6a03df0800000000000000
+      internalID: -202478734452387354
       vertices: []
       indices: 
       edges: []
@@ -263,7 +322,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: edd67d86e226d3f458776aeaab7fa764
     internalID: 0
     vertices: []
     indices: 
@@ -271,14 +330,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Pink_Monster_Attack2_6_0: -7482435820125559580
-      Pink_Monster_Attack2_6_1: -1981500011118924899
-      Pink_Monster_Attack2_6_2: -2577680928909753937
-      Pink_Monster_Attack2_6_3: 5244508403627165712
-      Pink_Monster_Attack2_6_4: -3366425783080637560
-      Pink_Monster_Attack2_6_5: 3689060607441623611
+      Pink_Monster_Death_9_0: 8329684037211562438
+      Pink_Monster_Death_9_1: 4328198357293265824
+      Pink_Monster_Death_9_2: 8495727118615821680
+      Pink_Monster_Death_9_3: 4347019618551767408
+      Pink_Monster_Death_9_4: -1886383683369577870
+      Pink_Monster_Death_9_5: 5541490398626548489
+      Pink_Monster_Death_9_6: -6797324140690594515
+      Pink_Monster_Death_9_7: -202478734452387354
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

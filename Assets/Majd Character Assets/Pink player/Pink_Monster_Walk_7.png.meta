@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 9e83d35092758714cb945fc893d2c142
+guid: 9fafe731022b88b469fa1539aaba7087
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3107800801566914199
-    second: Pink_Monster_Climb_4_0
+      213: 1713224734810146460
+    second: Pink_Monster_Walk_7_0
   - first:
-      213: -6152935053071782341
-    second: Pink_Monster_Climb_4_1
+      213: 7604369863768228232
+    second: Pink_Monster_Walk_7_1
   - first:
-      213: 9141657209216903040
-    second: Pink_Monster_Climb_4_2
+      213: 3401221593435778317
+    second: Pink_Monster_Walk_7_2
   - first:
-      213: -5166762456934851460
-    second: Pink_Monster_Climb_4_3
+      213: 8779671416919630684
+    second: Pink_Monster_Walk_7_3
+  - first:
+      213: 7432137055749954439
+    second: Pink_Monster_Walk_7_4
+  - first:
+      213: 316211884926090700
+    second: Pink_Monster_Walk_7_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pink_Monster_Climb_4_0
+      name: Pink_Monster_Walk_7_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 6
         y: 0
-        width: 21
-        height: 30
+        width: 19
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +143,64 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 796f11afc50212b20800000000000000
-      internalID: 3107800801566914199
+      spriteID: c9685cab1d896c710800000000000000
+      internalID: 1713224734810146460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Climb_4_1
+      name: Pink_Monster_Walk_7_1
       rect:
         serializedVersion: 2
         x: 38
         y: 0
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8814796f916288960800000000000000
+      internalID: 7604369863768228232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Walk_7_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0da02fc401933f20800000000000000
+      internalID: 3401221593435778317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Walk_7_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
         width: 20
-        height: 30
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b3e6b9b3b226c9aa0800000000000000
-      internalID: -6152935053071782341
+      spriteID: c53252213a8a7d970800000000000000
+      internalID: 8779671416919630684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Climb_4_2
+      name: Pink_Monster_Walk_7_4
       rect:
         serializedVersion: 2
-        x: 68
+        x: 134
         y: 0
-        width: 22
-        height: 30
+        width: 19
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08723c51cc0bdde70800000000000000
-      internalID: 9141657209216903040
+      spriteID: 78b5ef96641442760800000000000000
+      internalID: 7432137055749954439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Climb_4_3
+      name: Pink_Monster_Walk_7_5
       rect:
         serializedVersion: 2
-        x: 99
+        x: 166
         y: 0
-        width: 21
-        height: 30
+        width: 19
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c7cd29b8be8fb48b0800000000000000
-      internalID: -5166762456934851460
+      spriteID: ccdb6c2b809636400800000000000000
+      internalID: 316211884926090700
       vertices: []
       indices: 
       edges: []
@@ -223,10 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pink_Monster_Climb_4_0: 3107800801566914199
-      Pink_Monster_Climb_4_1: -6152935053071782341
-      Pink_Monster_Climb_4_2: 9141657209216903040
-      Pink_Monster_Climb_4_3: -5166762456934851460
+      Pink_Monster_Walk_7_0: 1713224734810146460
+      Pink_Monster_Walk_7_1: 7604369863768228232
+      Pink_Monster_Walk_7_2: 3401221593435778317
+      Pink_Monster_Walk_7_3: 8779671416919630684
+      Pink_Monster_Walk_7_4: 7432137055749954439
+      Pink_Monster_Walk_7_5: 316211884926090700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
