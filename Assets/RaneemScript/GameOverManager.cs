@@ -14,22 +14,30 @@ public class GameOverManager : MonoBehaviour
     [Header("Main Menu Scene Name")]
     [SerializeField] private string mainMenuSceneName = "MainMenu";
     [SerializeField] private PopupUI gameOverPopup;
+    [SerializeField] private GameObject canvas;
+    public AnnounceWinnerOnDeath announceWinnerOnDeath1;
+    public AnnounceWinnerOnDeath announceWinnerOnDeath2;
+    
 
-    public static GameOverManager Instance { get; private set; }
+    //public static GameOverManager Instance { get; private set; }
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-
+        // if (Instance != null)
+        // {
+        //     Destroy(gameObject);
+        //     return;
+        // }
+        // else
+        // {
+        //     Instance = this;
+        //     DontDestroyOnLoad(gameObject);
+        // } 
+        
         if (gameOverPanel != null) gameOverPanel.SetActive(false);
 
-        if (restartButton != null) restartButton.onClick.AddListener(RestartLevel);
-        if (mainMenuButton != null) mainMenuButton.onClick.AddListener(GoToMainMenu);
+        // if (restartButton != null) restartButton.onClick.AddListener(RestartLevel);
+        // if (mainMenuButton != null) mainMenuButton.onClick.AddListener(GoToMainMenu);
     }
 
     public void ShowGameOver(string winnerName)
@@ -39,7 +47,8 @@ public class GameOverManager : MonoBehaviour
         if (winnerText != null)
         {
             winnerText.text = $"{winnerName} wins!";
-            gameOverPopup.Show(); 
+            canvas.SetActive(true);
+            gameOverPopup.Show();
         }
 
         if (gameOverPanel != null)
@@ -48,15 +57,22 @@ public class GameOverManager : MonoBehaviour
         }
     }
 
-  public void RestartLevel()
-{
-    Time.timeScale = 1f;
-    // (reload scene) ...
-}
+    public void RestartLevel()
+    {
+        // resume time before loading
+        Time.timeScale = 1f;
+        announceWinnerOnDeath1.shown = false;
+        announceWinnerOnDeath2.shown = false;
+        Debug.Log("Restart Level");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Scene reloaded");
+        // var scene = SceneManager.GetActiveScene();
+        // SceneManager.LoadScene(scene.buildIndex);
+    }
 
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
-        
+        SceneManager.LoadScene(mainMenuSceneName);
     }
 }
