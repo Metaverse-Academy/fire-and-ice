@@ -13,6 +13,7 @@ public class GameOverManager : MonoBehaviour
 
     [Header("Main Menu Scene Name")]
     [SerializeField] private string mainMenuSceneName = "MainMenu";
+    [SerializeField] private PopupUI gameOverPopup;
 
     public static GameOverManager Instance { get; private set; }
 
@@ -38,6 +39,7 @@ public class GameOverManager : MonoBehaviour
         if (winnerText != null)
         {
             winnerText.text = $"{winnerName} wins!";
+            gameOverPopup.Show(); 
         }
 
         if (gameOverPanel != null)
@@ -46,16 +48,15 @@ public class GameOverManager : MonoBehaviour
         }
     }
 
-    public void RestartLevel()
-    {
-        Time.timeScale = 1f;
-        var scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.buildIndex);
-    }
+  public void RestartLevel()
+{
+    Time.timeScale = 1f;
+    // (reload scene) ...
+}
 
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(mainMenuSceneName);
+        
     }
 }
