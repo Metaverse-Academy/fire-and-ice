@@ -12,7 +12,7 @@ public class GameOverManager : MonoBehaviour
     [SerializeField] private Button mainMenuButton;
 
     [Header("Main Menu Scene Name")]
-    [SerializeField] private string mainMenuSceneName = "MainMenu";
+    [SerializeField] private string mainMenuScene = "MainMenu";
     [SerializeField] private PopupUI gameOverPopup;
 
     public static GameOverManager Instance { get; private set; }
