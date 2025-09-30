@@ -267,7 +267,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4731857938365419301}
         m_TargetAssemblyTypeName: BallLauncher, Assembly-CSharp
-        m_MethodName: OnBallTrigger
+        m_MethodName: OnShoot
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -319,7 +319,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b12cb6614f4270940bd776756cc2c9ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallLauncher
+  side: 0
   ballPrefab: {fileID: 8375622985378646298, guid: 1843729c62611b34db4c570b323fbae5, type: 3}
-  launchForce: 10
   firePoint: {fileID: 2173869441325315372}
   launchDirection: {x: 1, y: 2}
+  minForce: 3
+  maxForce: 50
+  timeToMax: 3
+  chargeBar: {fileID: 0}

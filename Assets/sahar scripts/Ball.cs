@@ -6,23 +6,31 @@ public class Ball : MonoBehaviour
     [SerializeField] private int damage = 1;
     [SerializeField] private float lifeTime = 5f;
 
+    [HideInInspector] public bool enableTurnNotify = false;
+
     void Start()
     {
         Destroy(gameObject, lifeTime);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            var hp = collision.gameObject.GetComponent<Health>()
-                     ?? collision.gameObject.GetComponentInParent<Health>();
-            if (hp != null)
-                hp.TakeDamage(damage);
+            var hp = other.GetComponent<Health>() ?? other.GetComponentInParent<Health>();
+            if (hp != null) hp.TakeDamage(damage);
+            Destroy(gameObject);
         }
+        else if (!other.isTrigger)
+        {
+            Destroy(gameObject);
+        }
+    }
 
-        Destroy(gameObject);
+    void OnDestroy()
+    {
+        if (enableTurnNotify)
+            TurnManager.I?.NotifyBallEnded();
     }
 }
-
 
