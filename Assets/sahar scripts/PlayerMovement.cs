@@ -106,6 +106,7 @@ public class PlayerMovement : MonoBehaviour
             Transform target = FindOtherPlayer();
             proj.Initialize(PlayerIndex, dir * speed, target, charge01);
         }
+          
     }
 
     private Transform FindOtherPlayer()
@@ -122,6 +123,11 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(groundCheckTransform.position, checkRadius);
     }
+    // inside PlayerMovement
+public event System.Action OnShot;
+
+
+
 }
 
 
