@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 5baf4737103ce0d4fbfcecfdd83ff7f4
+guid: aef3fa9acb622e840a88de1e1fa22174
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 763835390307107805
-    second: Walk_Run_Push_Dust_6_0
+      213: 1614390804806716115
+    second: Pink_Monster_Hurt_5_0
   - first:
-      213: -2034057449013672910
-    second: Walk_Run_Push_Dust_6_1
+      213: 5629409899921188883
+    second: Pink_Monster_Hurt_5_1
   - first:
-      213: -9068918288630276153
-    second: Walk_Run_Push_Dust_6_2
+      213: 1075122768223257028
+    second: Pink_Monster_Hurt_5_2
   - first:
-      213: -2025257852810059168
-    second: Walk_Run_Push_Dust_6_3
-  - first:
-      213: -9059182934966639889
-    second: Walk_Run_Push_Dust_6_4
-  - first:
-      213: 231968053973558867
-    second: Walk_Run_Push_Dust_6_5
-  - first:
-      213: -2248178329886123279
-    second: Walk_Run_Push_Dust_6_6
-  - first:
-      213: -4973292522511453613
-    second: Walk_Run_Push_Dust_6_7
+      213: -3236413603250602403
+    second: Pink_Monster_Hurt_5_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,177 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_Run_Push_Dust_6_0
+      name: Pink_Monster_Hurt_5_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 18
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd380229d30b99a00800000000000000
-      internalID: 763835390307107805
+      spriteID: 3da492132e7776610800000000000000
+      internalID: 1614390804806716115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Run_Push_Dust_6_1
+      name: Pink_Monster_Hurt_5_1
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
-        width: 14
-        height: 12
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2348dcae68395c3e0800000000000000
-      internalID: -2034057449013672910
+      spriteID: 318aed36a7eaf1e40800000000000000
+      internalID: 5629409899921188883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Run_Push_Dust_6_2
+      name: Pink_Monster_Hurt_5_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 20
-        height: 14
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7cf162d9ddab42280800000000000000
-      internalID: -9068918288630276153
+      spriteID: 4c1c1e1267a9bee00800000000000000
+      internalID: 1075122768223257028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Run_Push_Dust_6_3
+      name: Pink_Monster_Hurt_5_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 1
-        width: 8
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 062afa096b6d4e3e0800000000000000
-      internalID: -2025257852810059168
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Run_Push_Dust_6_4
-      rect:
-        serializedVersion: 2
-        x: 104
         y: 0
-        width: 11
-        height: 6
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe268064e11574280800000000000000
-      internalID: -9059182934966639889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Run_Push_Dust_6_5
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 2
-        width: 8
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 356255057bd183300800000000000000
-      internalID: 231968053973558867
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Run_Push_Dust_6_6
-      rect:
-        serializedVersion: 2
-        x: 134
-        y: 0
-        width: 11
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1fa186768bddcc0e0800000000000000
-      internalID: -2248178329886123279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Run_Push_Dust_6_7
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3523997ecc05bfab0800000000000000
-      internalID: -4973292522511453613
+      spriteID: d5e7100a9f2f513d0800000000000000
+      internalID: -3236413603250602403
       vertices: []
       indices: 
       edges: []
@@ -313,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 045c4c6ab60b9644b853345c5b9e4e41
     internalID: 0
     vertices: []
     indices: 
@@ -321,16 +221,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Walk_Run_Push_Dust_6_0: 763835390307107805
-      Walk_Run_Push_Dust_6_1: -2034057449013672910
-      Walk_Run_Push_Dust_6_2: -9068918288630276153
-      Walk_Run_Push_Dust_6_3: -2025257852810059168
-      Walk_Run_Push_Dust_6_4: -9059182934966639889
-      Walk_Run_Push_Dust_6_5: 231968053973558867
-      Walk_Run_Push_Dust_6_6: -2248178329886123279
-      Walk_Run_Push_Dust_6_7: -4973292522511453613
+      Pink_Monster_Hurt_5_0: 1614390804806716115
+      Pink_Monster_Hurt_5_1: 5629409899921188883
+      Pink_Monster_Hurt_5_2: 1075122768223257028
+      Pink_Monster_Hurt_5_3: -3236413603250602403
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

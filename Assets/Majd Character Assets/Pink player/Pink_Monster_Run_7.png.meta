@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 833a213f789c2b24aa99ac005152e85e
+guid: 5a49e73925a6a2d4b9fd37631d378e5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 595661573533270607
-    second: Pink_Monster_Push_6_0
+      213: 2290902970899664710
+    second: Pink_Monster_Run_7_0
   - first:
-      213: 3380867843975962835
-    second: Pink_Monster_Push_6_1
+      213: 4087147155820439587
+    second: Pink_Monster_Run_7_1
   - first:
-      213: 8767817562348655431
-    second: Pink_Monster_Push_6_2
+      213: -5577807850519449457
+    second: Pink_Monster_Run_7_2
   - first:
-      213: -7016653239807626574
-    second: Pink_Monster_Push_6_3
+      213: -7348356421675458506
+    second: Pink_Monster_Run_7_3
   - first:
-      213: -2836629171940628902
-    second: Pink_Monster_Push_6_4
+      213: 5994581997374066734
+    second: Pink_Monster_Run_7_4
   - first:
-      213: 1645720435441620283
-    second: Pink_Monster_Push_6_5
+      213: -3693442295374367425
+    second: Pink_Monster_Run_7_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pink_Monster_Push_6_0
+      name: Pink_Monster_Run_7_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 0
-        width: 22
-        height: 28
+        width: 21
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,19 +143,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f420dc09b07344800800000000000000
-      internalID: 595661573533270607
+      spriteID: 64f8c534d1ceacf10800000000000000
+      internalID: 2290902970899664710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Push_6_1
+      name: Pink_Monster_Run_7_1
       rect:
         serializedVersion: 2
-        x: 41
+        x: 39
         y: 0
-        width: 21
+        width: 20
         height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -165,19 +165,63 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d06ab834614bee20800000000000000
-      internalID: 3380867843975962835
+      spriteID: 328ec6ffea678b830800000000000000
+      internalID: 4087147155820439587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Push_6_2
+      name: Pink_Monster_Run_7_2
       rect:
         serializedVersion: 2
-        x: 73
+        x: 70
         y: 0
         width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80376cff45a792b0800000000000000
+      internalID: -5577807850519449457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Run_7_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630e21b84c4650a90800000000000000
+      internalID: -7348356421675458506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Run_7_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 20
         height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 743193b7e9b8da970800000000000000
-      internalID: 8767817562348655431
+      spriteID: e20de62e098013350800000000000000
+      internalID: 5994581997374066734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Push_6_3
+      name: Pink_Monster_Run_7_5
       rect:
         serializedVersion: 2
-        x: 105
+        x: 167
         y: 0
-        width: 21
-        height: 28
+        width: 20
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,52 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b23c21ed07df9e90800000000000000
-      internalID: -7016653239807626574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Push_6_4
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 0
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a56e7f61cc442a8d0800000000000000
-      internalID: -2836629171940628902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Push_6_5
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 0
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b3559124406c6d610800000000000000
-      internalID: 1645720435441620283
+      spriteID: f35bec11dc14ebcc0800000000000000
+      internalID: -3693442295374367425
       vertices: []
       indices: 
       edges: []
@@ -273,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pink_Monster_Push_6_0: 595661573533270607
-      Pink_Monster_Push_6_1: 3380867843975962835
-      Pink_Monster_Push_6_2: 8767817562348655431
-      Pink_Monster_Push_6_3: -7016653239807626574
-      Pink_Monster_Push_6_4: -2836629171940628902
-      Pink_Monster_Push_6_5: 1645720435441620283
+      Pink_Monster_Run_7_0: 2290902970899664710
+      Pink_Monster_Run_7_1: 4087147155820439587
+      Pink_Monster_Run_7_2: -5577807850519449457
+      Pink_Monster_Run_7_3: -7348356421675458506
+      Pink_Monster_Run_7_4: 5994581997374066734
+      Pink_Monster_Run_7_5: -3693442295374367425
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

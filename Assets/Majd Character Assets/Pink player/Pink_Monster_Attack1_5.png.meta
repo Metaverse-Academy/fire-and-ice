@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 2a3a3540612152b43b4da35565c941a7
+guid: a96dfecb8386a7449b42c5d37439e0ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3302896165122048739
-    second: Pink_Monster_Attack1_4_0
+      213: 1457689435066123703
+    second: Pink_Monster_Attack1_5_0
   - first:
-      213: 6057537341495812442
-    second: Pink_Monster_Attack1_4_1
+      213: -515336305572289019
+    second: Pink_Monster_Attack1_5_1
   - first:
-      213: -1049760841339467848
-    second: Pink_Monster_Attack1_4_2
+      213: 2105368749067808939
+    second: Pink_Monster_Attack1_5_2
   - first:
-      213: 2554121618227466506
-    second: Pink_Monster_Attack1_4_3
+      213: -5948579103614400266
+    second: Pink_Monster_Attack1_5_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pink_Monster_Attack1_4_0
+      name: Pink_Monster_Attack1_5_0
       rect:
         serializedVersion: 2
         x: 6
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e2891c009e36dd20800000000000000
-      internalID: 3302896165122048739
+      spriteID: 7b5c4f961d0ca3410800000000000000
+      internalID: 1457689435066123703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Attack1_4_1
+      name: Pink_Monster_Attack1_5_1
       rect:
         serializedVersion: 2
         x: 37
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a51a58d2e12b01450800000000000000
-      internalID: 6057537341495812442
+      spriteID: 50660864c5829d8f0800000000000000
+      internalID: -515336305572289019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Attack1_4_2
+      name: Pink_Monster_Attack1_5_2
       rect:
         serializedVersion: 2
         x: 69
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b788d0a3108e61f0800000000000000
-      internalID: -1049760841339467848
+      spriteID: ba03569f8b5c73d10800000000000000
+      internalID: 2105368749067808939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Attack1_4_3
+      name: Pink_Monster_Attack1_5_3
       rect:
         serializedVersion: 2
         x: 102
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0118975410127320800000000000000
-      internalID: 2554121618227466506
+      spriteID: 6f880ca72d6627da0800000000000000
+      internalID: -5948579103614400266
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pink_Monster_Attack1_4_0: 3302896165122048739
-      Pink_Monster_Attack1_4_1: 6057537341495812442
-      Pink_Monster_Attack1_4_2: -1049760841339467848
-      Pink_Monster_Attack1_4_3: 2554121618227466506
+      Pink_Monster_Attack1_5_0: 1457689435066123703
+      Pink_Monster_Attack1_5_1: -515336305572289019
+      Pink_Monster_Attack1_5_2: 2105368749067808939
+      Pink_Monster_Attack1_5_3: -5948579103614400266
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: f34435c67ead9544cb0004e259a7e46e
+guid: 1765e250f376ae64baf3a2b55a4268e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1218939323123148936
-    second: Pink_Monster_Run_6_0
+      213: -3275741754508671957
+    second: Pink_Monster_Throw_5_0
   - first:
-      213: -4797701495704539482
-    second: Pink_Monster_Run_6_1
+      213: -5515680444253166031
+    second: Pink_Monster_Throw_5_1
   - first:
-      213: 2860269898237082058
-    second: Pink_Monster_Run_6_2
+      213: -2648604920549331533
+    second: Pink_Monster_Throw_5_2
   - first:
-      213: -1039535942809524427
-    second: Pink_Monster_Run_6_3
-  - first:
-      213: -7629103843232880221
-    second: Pink_Monster_Run_6_4
-  - first:
-      213: 8210571726270102438
-    second: Pink_Monster_Run_6_5
+      213: 4958474484185954997
+    second: Pink_Monster_Throw_5_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,133 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pink_Monster_Run_6_0
+      name: Pink_Monster_Throw_5_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 21
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 888a28d2bda8ae010800000000000000
-      internalID: 1218939323123148936
+      spriteID: b24889ada3a3a82d0800000000000000
+      internalID: -3275741754508671957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Run_6_1
+      name: Pink_Monster_Throw_5_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 32
         y: 0
-        width: 20
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6aeab22b8e32b6db0800000000000000
-      internalID: -4797701495704539482
+      spriteID: 136a8b9fbdd5473b0800000000000000
+      internalID: -5515680444253166031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Run_6_2
+      name: Pink_Monster_Throw_5_2
       rect:
         serializedVersion: 2
-        x: 70
+        x: 64
         y: 0
-        width: 21
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac9f92e6158b1b720800000000000000
-      internalID: 2860269898237082058
+      spriteID: 3bd2e409bd34e3bd0800000000000000
+      internalID: -2648604920549331533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Run_6_3
+      name: Pink_Monster_Throw_5_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 96
         y: 0
-        width: 21
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53766955193d291f0800000000000000
-      internalID: -1039535942809524427
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Run_6_4
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 0
-        width: 20
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3a9698da97aff1690800000000000000
-      internalID: -7629103843232880221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Run_6_5
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 0
-        width: 20
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6abf13bcb7fc1f170800000000000000
-      internalID: 8210571726270102438
+      spriteID: 5bafdb1b54a00d440800000000000000
+      internalID: 4958474484185954997
       vertices: []
       indices: 
       edges: []
@@ -263,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f47d7c262caf79244bf2fbede3f6916c
     internalID: 0
     vertices: []
     indices: 
@@ -271,14 +221,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Pink_Monster_Run_6_0: 1218939323123148936
-      Pink_Monster_Run_6_1: -4797701495704539482
-      Pink_Monster_Run_6_2: 2860269898237082058
-      Pink_Monster_Run_6_3: -1039535942809524427
-      Pink_Monster_Run_6_4: -7629103843232880221
-      Pink_Monster_Run_6_5: 8210571726270102438
+      Pink_Monster_Throw_5_0: -3275741754508671957
+      Pink_Monster_Throw_5_1: -5515680444253166031
+      Pink_Monster_Throw_5_2: -2648604920549331533
+      Pink_Monster_Throw_5_3: 4958474484185954997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

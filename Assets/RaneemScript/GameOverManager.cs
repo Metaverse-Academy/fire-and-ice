@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -17,33 +18,38 @@ public class GameOverManager : MonoBehaviour
     [SerializeField] private GameObject canvas;
     public AnnounceWinnerOnDeath announceWinnerOnDeath1;
     public AnnounceWinnerOnDeath announceWinnerOnDeath2;
-    
 
-    //public static GameOverManager Instance { get; private set; }
+    [Header("Die Animation")]
+    [Tooltip("Time in seconds to wait before showing Game Over to allow Die animation to play.")]
+    [SerializeField] private float deathAnimLength = 1.0f;
+
+    private bool isGameOver = false;
 
     private void Awake()
     {
-        // if (Instance != null)
-        // {
-        //     Destroy(gameObject);
-        //     return;
-        // }
-        // else
-        // {
-        //     Instance = this;
-        //     DontDestroyOnLoad(gameObject);
-        // } 
-        
         if (gameOverPanel != null) gameOverPanel.SetActive(false);
-
-        // if (restartButton != null) restartButton.onClick.AddListener(RestartLevel);
-        // if (mainMenuButton != null) mainMenuButton.onClick.AddListener(GoToMainMenu);
     }
 
+    /// <summary>
+    /// Call this when a player dies. The UI will show after the delay.
+    /// </summary>
     public void ShowGameOver(string winnerName)
     {
+        if (isGameOver) return; // prevent multiple calls
+        isGameOver = true;
+
+        StartCoroutine(DelayedGameOver(winnerName));
+    }
+
+    private IEnumerator DelayedGameOver(string winnerName)
+    {
+        // Wait for Die animation to finish
+        yield return new WaitForSecondsRealtime(deathAnimLength);
+
+        // Freeze the game
         Time.timeScale = 0f;
 
+        // Update UI
         if (winnerText != null)
         {
             winnerText.text = $"{winnerName} wins!";
@@ -59,15 +65,10 @@ public class GameOverManager : MonoBehaviour
 
     public void RestartLevel()
     {
-        // resume time before loading
         Time.timeScale = 1f;
         announceWinnerOnDeath1.shown = false;
         announceWinnerOnDeath2.shown = false;
-        Debug.Log("Restart Level");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Debug.Log("Scene reloaded");
-        // var scene = SceneManager.GetActiveScene();
-        // SceneManager.LoadScene(scene.buildIndex);
     }
 
     public void GoToMainMenu()

@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 11035c01fbd432e46b743b8f3f041af4
+guid: 3bd8d7ddc61ea344a80dfecb1769558d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4988797014474009180
-    second: Pink_Monster_Walk_6_0
+      213: -3572862399427792793
+    second: Pink_Monster_Jump_9_0
   - first:
-      213: -4114854856959736440
-    second: Pink_Monster_Walk_6_1
+      213: -124856938382061295
+    second: Pink_Monster_Jump_9_1
   - first:
-      213: 8852617987441630179
-    second: Pink_Monster_Walk_6_2
+      213: 2628462293490542176
+    second: Pink_Monster_Jump_9_2
   - first:
-      213: 2928625931318688351
-    second: Pink_Monster_Walk_6_3
+      213: 432059771174860864
+    second: Pink_Monster_Jump_9_3
   - first:
-      213: 7152728969252384440
-    second: Pink_Monster_Walk_6_4
+      213: -5016147552741751276
+    second: Pink_Monster_Jump_9_4
   - first:
-      213: 1435900599014651832
-    second: Pink_Monster_Walk_6_5
+      213: -6883994913909391077
+    second: Pink_Monster_Jump_9_5
+  - first:
+      213: 61667442281412560
+    second: Pink_Monster_Jump_9_6
+  - first:
+      213: 6357498839740094505
+    second: Pink_Monster_Jump_9_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,12 +134,144 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pink_Monster_Walk_6_0
+      name: Pink_Monster_Jump_9_0
       rect:
         serializedVersion: 2
         x: 6
         y: 0
         width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760b1cad394aa6ec0800000000000000
+      internalID: -3572862399427792793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Jump_9_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1119efba64b644ef0800000000000000
+      internalID: -124856938382061295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Jump_9_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066230d978c2a7420800000000000000
+      internalID: 2628462293490542176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Jump_9_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0483d9e921cfef500800000000000000
+      internalID: 432059771174860864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Jump_9_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 2
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41602e1a060136ab0800000000000000
+      internalID: -5016147552741751276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Jump_9_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11c5d849132770a0800000000000000
+      internalID: -6883994913909391077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Jump_9_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 24
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -143,64 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5aa040f374cb3540800000000000000
-      internalID: 4988797014474009180
+      spriteID: 0d7f36746361bd000800000000000000
+      internalID: 61667442281412560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pink_Monster_Walk_6_1
+      name: Pink_Monster_Jump_9_7
       rect:
         serializedVersion: 2
-        x: 38
-        y: 0
-        width: 19
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 885cf9c1f4915e6c0800000000000000
-      internalID: -4114854856959736440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Walk_6_2
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 0
-        width: 19
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3eb11b90821dada70800000000000000
-      internalID: 8852617987441630179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Walk_6_3
-      rect:
-        serializedVersion: 2
-        x: 101
+        x: 229
         y: 0
         width: 20
-        height: 28
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,52 +303,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5a7f3c94c194a820800000000000000
-      internalID: 2928625931318688351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Walk_6_4
-      rect:
-        serializedVersion: 2
-        x: 134
-        y: 0
-        width: 19
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8be2feac919934360800000000000000
-      internalID: 7152728969252384440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pink_Monster_Walk_6_5
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 0
-        width: 19
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b7f901bcf75de310800000000000000
-      internalID: 1435900599014651832
+      spriteID: 9289aa2e28f5a3850800000000000000
+      internalID: 6357498839740094505
       vertices: []
       indices: 
       edges: []
@@ -273,12 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pink_Monster_Walk_6_0: 4988797014474009180
-      Pink_Monster_Walk_6_1: -4114854856959736440
-      Pink_Monster_Walk_6_2: 8852617987441630179
-      Pink_Monster_Walk_6_3: 2928625931318688351
-      Pink_Monster_Walk_6_4: 7152728969252384440
-      Pink_Monster_Walk_6_5: 1435900599014651832
+      Pink_Monster_Jump_9_0: -3572862399427792793
+      Pink_Monster_Jump_9_1: -124856938382061295
+      Pink_Monster_Jump_9_2: 2628462293490542176
+      Pink_Monster_Jump_9_3: 432059771174860864
+      Pink_Monster_Jump_9_4: -5016147552741751276
+      Pink_Monster_Jump_9_5: -6883994913909391077
+      Pink_Monster_Jump_9_6: 61667442281412560
+      Pink_Monster_Jump_9_7: 6357498839740094505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

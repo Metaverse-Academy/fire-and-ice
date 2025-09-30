@@ -1,45 +1,39 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(PlayerMovement))]
+[RequireComponent(typeof(BallLauncher))]
 public class PlayerAnimation : MonoBehaviour
 {
-    private Animator anim;
-    private PlayerMovement movement;
-
-    private bool isDead = false;
+    private Animator animator;
+    private BallLauncher launcher;
 
     private void Awake()
     {
-        anim = GetComponent<Animator>();
-        movement = GetComponent<PlayerMovement>();
-
-        // Subscribe to shooting event
-        movement.OnShot += PlayThrow;
+        animator = GetComponent<Animator>();
+        launcher = GetComponent<BallLauncher>();
     }
 
-    private void OnDestroy()
+    private void Update()
     {
-        movement.OnShot -= PlayThrow;
+        // Animate Throwing while charging
+        animator.SetBool("IsThrowing", launcherIsCharging());
     }
 
-    // === Animation Triggers ===
-    private void PlayThrow()
-    {
-        if (isDead) return;
-        anim.SetTrigger("Throw");
-    }
-
+    // External triggers for damage/death
     public void PlayHurt()
     {
-        if (isDead) return;
-        anim.SetTrigger("Hurt");
+        animator.SetTrigger("Hurt");
     }
 
     public void PlayDie()
     {
-        if (isDead) return;
-        isDead = true;
-        anim.SetBool("Dead", true);
+        animator.SetBool("Dead", true);
+    }
+
+    // Use reflection to read private isCharging field without modifying BallLauncher
+    private bool launcherIsCharging()
+    {
+        var field = typeof(BallLauncher).GetField("isCharging", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        return (bool)field.GetValue(launcher);
     }
 }
