@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 57f58092b4c8d2241bc4fc5d5994df9b
   - enabled: 1
-    path: Assets/Scenes/merged scene.unity
+    path: Assets/Scenes/RaneemScene2.unity
     guid: c4c297be29c2ed04ab1279f8bf6a43d7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
