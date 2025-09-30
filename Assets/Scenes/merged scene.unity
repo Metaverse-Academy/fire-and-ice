@@ -346,7 +346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 442766119705813318, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.553
+      value: -0.72099996
       objectReference: {fileID: 0}
     - target: {fileID: 442766119705813318, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: m_LocalPosition.z
@@ -381,9 +381,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4660934613872681537, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: maxForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660934613872681537, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: chargeBar
       value: 
       objectReference: {fileID: 630025145}
+    - target: {fileID: 5765422573729198847, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: winnerName
+      value: Frostbite
+      objectReference: {fileID: 0}
     - target: {fileID: 5765422573729198847, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: GameOverManager
       value: 
@@ -646,7 +654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1516102810687508979, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.744
+      value: -0.53
       objectReference: {fileID: 0}
     - target: {fileID: 1516102810687508979, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -681,9 +689,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: maxForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: chargeBar
       value: 
       objectReference: {fileID: 1188187335}
+    - target: {fileID: 5313680041521316112, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: winnerName
+      value: Magma
+      objectReference: {fileID: 0}
     - target: {fileID: 5313680041521316112, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: GameOverManager
       value: 
@@ -817,14 +833,14 @@ RectTransform:
   m_GameObject: {fileID: 630025144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2.88, z: 1}
+  m_LocalScale: {x: 0.8, y: 2.3040001, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2137700946}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 516, y: -53}
+  m_AnchoredPosition: {x: 373, y: -53}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &685337451
@@ -967,7 +983,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.18
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6141,7 +6157,7 @@ Transform:
   m_GameObject: {fileID: 1005707035}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -960, y: -536.5, z: 0}
+  m_LocalPosition: {x: -960, y: -537.77, z: 0}
   m_LocalScale: {x: 1.8099998, y: 1.8099998, z: 1.8099998}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6527,14 +6543,14 @@ RectTransform:
   m_GameObject: {fileID: 1188187334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2.88, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.8, y: 2.3040001, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2137700946}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -516, y: -53}
+  m_AnchoredPosition: {x: -402, y: -53}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1320060394
@@ -7510,7 +7526,7 @@ Transform:
   m_GameObject: {fileID: 1816328768}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.85818, y: 0.41862, z: 0}
+  m_LocalPosition: {x: 0.85818, y: -0.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
