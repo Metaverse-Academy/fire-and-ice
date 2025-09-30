@@ -26,7 +26,7 @@ public class Health : MonoBehaviour
         {
             onDeath?.Invoke();
             // Default behavior; replace with respawn/round-end as needed:
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
     }
 
