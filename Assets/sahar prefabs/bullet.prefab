@@ -168,6 +168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d4e3663fe83ee949ae595a8edd7920e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
-  damage: 5
-  lifeTime: 5
+  damage: 2
+  lifeTime: 3
   enableTurnNotify: 0
