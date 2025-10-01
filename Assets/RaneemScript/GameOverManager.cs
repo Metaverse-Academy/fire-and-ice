@@ -23,11 +23,28 @@ public class GameOverManager : MonoBehaviour
     [Tooltip("Time in seconds to wait before showing Game Over to allow Die animation to play.")]
     [SerializeField] private float deathAnimLength = 1.0f;
 
+    [Header("Click SFX")]
+    [SerializeField] private AudioSource uiAudio;             // <-- assign an AudioSource on your Canvas
+    [SerializeField] private AudioClip clickClip;             // <-- your button click sound
+    [SerializeField, Range(0f, 1f)] private float clickVolume = 1f;
+
     private bool isGameOver = false;
 
     private void Awake()
     {
         if (gameOverPanel != null) gameOverPanel.SetActive(false);
+
+        // Optional: wire buttons here (or set in Inspector)
+        if (restartButton)
+        {
+            restartButton.onClick.RemoveAllListeners();
+            restartButton.onClick.AddListener(OnRestartPressed);
+        }
+        if (mainMenuButton)
+        {
+            mainMenuButton.onClick.RemoveAllListeners();
+            mainMenuButton.onClick.AddListener(OnMainMenuPressed);
+        }
     }
 
     /// <summary>
@@ -37,13 +54,12 @@ public class GameOverManager : MonoBehaviour
     {
         if (isGameOver) return; // prevent multiple calls
         isGameOver = true;
-
         StartCoroutine(DelayedGameOver(winnerName));
     }
 
     private IEnumerator DelayedGameOver(string winnerName)
     {
-        // Wait for Die animation to finish
+        // Wait for Die animation to finish (unscaled time, works when paused)
         yield return new WaitForSecondsRealtime(deathAnimLength);
 
         // Freeze the game
@@ -53,25 +69,47 @@ public class GameOverManager : MonoBehaviour
         if (winnerText != null)
         {
             winnerText.text = $"{winnerName} wins!";
-            canvas.SetActive(true);
-            gameOverPopup.Show();
+            if (canvas) canvas.SetActive(true);
+            if (gameOverPopup) gameOverPopup.Show();
         }
 
         if (gameOverPanel != null)
-        {
             gameOverPanel.SetActive(true);
-        }
     }
 
-    public void RestartLevel()
+    // ---------- Button hooks (play click, then act) ----------
+
+    public void OnRestartPressed()
+    {
+        StartCoroutine(PlayClickThen(RestartNow));
+    }
+
+    public void OnMainMenuPressed()
+    {
+        StartCoroutine(PlayClickThen(GoToMainMenuNow));
+    }
+
+    private IEnumerator PlayClickThen(System.Action action)
+    {
+        if (uiAudio && clickClip)
+        {
+            uiAudio.PlayOneShot(clickClip, clickVolume);
+            yield return new WaitForSecondsRealtime(clickClip.length); // not affected by Time.timeScale
+        }
+        action?.Invoke();
+    }
+
+    // ---------- Actual actions ----------
+
+    private void RestartNow()
     {
         Time.timeScale = 1f;
-        announceWinnerOnDeath1.shown = false;
-        announceWinnerOnDeath2.shown = false;
+        if (announceWinnerOnDeath1) announceWinnerOnDeath1.shown = false;
+        if (announceWinnerOnDeath2) announceWinnerOnDeath2.shown = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void GoToMainMenu()
+    private void GoToMainMenuNow()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(mainMenuSceneName);

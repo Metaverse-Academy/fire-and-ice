@@ -7,15 +7,27 @@ public class TurnManager : MonoBehaviour
     public static TurnManager I { get; private set; }
 
     [Header("Start Turn")]
-    public Side currentTurn = Side.Player1;
+    [SerializeField] private bool randomizeStartTurn = true;           // <-- NEW
+    [SerializeField] private Side defaultStart = Side.Player1;         // optional fallback
+    public Side currentTurn;                                           // (no default here)
 
-    private int activeBalls = 0;     // how many balls are still flying from the current turn
-    private bool turnLocked = false; // prevents the shooter from firing again in the same turn
+    private int activeBalls = 0;
+    private bool turnLocked = false;
 
     void Awake()
     {
         if (I != null && I != this) { Destroy(gameObject); return; }
         I = this;
+
+        // Pick who starts
+        if (randomizeStartTurn)
+            currentTurn = (Random.value < 0.5f) ? Side.Player1 : Side.Player2;
+        else
+            currentTurn = defaultStart;
+
+        // reset per-turn state
+        activeBalls = 0;
+        turnLocked = false;
     }
 
     public bool CanShoot(Side asker)
@@ -26,7 +38,7 @@ public class TurnManager : MonoBehaviour
     public void NotifyShotFired(Side shooter)
     {
         if (shooter != currentTurn) return;
-        turnLocked = true;   // shooter can’t fire again this turn
+        turnLocked = true;
         activeBalls++;
     }
 
@@ -35,10 +47,16 @@ public class TurnManager : MonoBehaviour
         activeBalls = Mathf.Max(0, activeBalls - 1);
         if (activeBalls == 0)
         {
-            // switch turns
             currentTurn = (currentTurn == Side.Player1) ? Side.Player2 : Side.Player1;
             turnLocked = false;
         }
     }
-}
 
+    // OPTIONAL: call this if you ever do "next round" without reloading the scene
+    public void RandomizeStartTurn()
+    {
+        currentTurn = (Random.value < 0.5f) ? Side.Player1 : Side.Player2;
+        activeBalls = 0;
+        turnLocked = false;
+    }
+}
