@@ -38,8 +38,7 @@ public class BallAnimation : MonoBehaviour
 
     public void PlayExplode()
     {
-        if (hasExploded) return;
-        hasExploded = true;
+        
 
         // Play the explosion animation
         animator.Play("Explode", -1, 0f);
