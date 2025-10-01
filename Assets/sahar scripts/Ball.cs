@@ -25,7 +25,11 @@ public class Ball : MonoBehaviour
 
         else if (!other.isTrigger)
         {
-            Destroy(gameObject);
+             var anim = GetComponent<BallAnimation>();
+             if (anim != null)
+             anim.PlayExplode();
+              else
+             Destroy(gameObject);
         }
         SoundEffectsManager.instance.PlayRandomSoundEffectsClip(ballhitClips, transform, 1f);
     }
