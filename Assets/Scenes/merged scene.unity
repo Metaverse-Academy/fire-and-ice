@@ -362,13 +362,13 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 197eb693b3a56f34b8cea2189b107be6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.051
+  m_Volume: 0.26
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 161
+  Priority: 124
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -518,15 +518,39 @@ PrefabInstance:
       value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 4660934613872681537, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: throwSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: b7dabe3c52f566740972984d19f84af4, type: 3}
+    - target: {fileID: 4660934613872681537, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: chargeBar
       value: 
       objectReference: {fileID: 630025145}
+    - target: {fileID: 4660934613872681537, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: chargeLoopSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: e1c9c9fd8921ade4dbd4af2e3ec6b783, type: 3}
     - target: {fileID: 5765422573729198847, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: GameOverManager
       value: 
       objectReference: {fileID: 882668876}
     - target: {fileID: 5806908036236644283, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: maxHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8437268324381987660, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4613467534420481954, guid: c3c1f6652ba8eb84fac5937966887e83, type: 3}
+    - target: {fileID: 8437268324381987660, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8437268324381987660, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8437268324381987660, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8563951145595362779, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
@@ -777,7 +801,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8583150115609255495, guid: 37e6c6dff9c52d94ba7cfaa5a4ae71ad, type: 3}
+  m_Sprite: {fileID: -7122424836021065235, guid: 5ae090675fa44f24c910c92edfe44b06, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -912,9 +936,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: throwSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: b7dabe3c52f566740972984d19f84af4, type: 3}
+    - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: chargeBar
       value: 
       objectReference: {fileID: 1188187335}
+    - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: chargeLoopSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: e1c9c9fd8921ade4dbd4af2e3ec6b783, type: 3}
+    - target: {fileID: 4732156892182242067, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4613467534420481954, guid: c3c1f6652ba8eb84fac5937966887e83, type: 3}
+    - target: {fileID: 4732156892182242067, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732156892182242067, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732156892182242067, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5313680041521316112, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: GameOverManager
       value: 
@@ -1253,7 +1301,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1555,13 +1603,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933522413}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 6.1, y: 4.63, z: 0}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 7.62, y: -8.28, z: 0}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 685337452}
-  m_LocalEulerAnglesHint: {x: -270, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
 --- !u!199 &933522415
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -6426,7 +6474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1005707036
 Transform:
   m_ObjectHideFlags: 0
@@ -8056,6 +8104,77 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86366ee762c1d79408fb008c81c239c0, type: 3}
+--- !u!1 &1789650739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1789650742}
+  - component: {fileID: 1789650741}
+  - component: {fileID: 1789650740}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1789650740
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789650739}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.7671556, y: 5.062622, z: 1}
+  m_Center: {x: 0.48012877, y: 0.33239555, z: 0}
+--- !u!114 &1789650741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789650739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
+  m_IsGlobal: 1
+  priority: 2.1
+  blendDistance: 1.09
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 5e2f6418f948adb4f8769b6b505450fa, type: 2}
+--- !u!4 &1789650742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789650739}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.62, y: -1.956309, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1816328768
 GameObject:
   m_ObjectHideFlags: 0
@@ -13384,3 +13503,4 @@ SceneRoots:
   - {fileID: 191647460}
   - {fileID: 1749186230}
   - {fileID: 1341824062}
+  - {fileID: 1789650742}
