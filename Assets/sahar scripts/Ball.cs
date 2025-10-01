@@ -7,6 +7,7 @@ public class Ball : MonoBehaviour
     [SerializeField] private float lifeTime = 5f;
 
     [HideInInspector] public bool enableTurnNotify = false;
+     [SerializeField] private AudioClip[] ballhitClips;
 
     void Start()
     {
@@ -21,10 +22,12 @@ public class Ball : MonoBehaviour
             if (hp != null) hp.TakeDamage(damage);
             Destroy(gameObject);
         }
+
         else if (!other.isTrigger)
         {
             Destroy(gameObject);
         }
+        SoundEffectsManager.instance.PlayRandomSoundEffectsClip(ballhitClips, transform, 1f);
     }
 
     void OnDestroy()

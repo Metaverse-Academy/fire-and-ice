@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
-using FirstGearGames.SmoothCameraShaker;
+using FirstGearGames.SmoothCameraShaker; //added this raneem
 
 public class Health : MonoBehaviour
 {
@@ -10,7 +10,8 @@ public class Health : MonoBehaviour
     public UnityEvent onDamaged;
     public UnityEvent onDeath;
     public int MaxHealth => maxHealth;
-    public ShakeData shakeData; 
+    public ShakeData shakeData; //added this raneem
+    [SerializeField] private AudioClip[] damageSoundClips;
 
     void Awake()
     {
@@ -23,7 +24,10 @@ public class Health : MonoBehaviour
 
         CurrentHealth = Mathf.Max(0, CurrentHealth - amount);
         onDamaged?.Invoke();
-        CameraShakerHandler.Shake(shakeData);
+
+        CameraShakerHandler.Shake(shakeData); //added this raneem  
+
+        SoundEffectsManager.instance.PlayRandomSoundEffectsClip(damageSoundClips, transform, 1f);
 
         if (CurrentHealth <= 0)
         {

@@ -18,6 +18,8 @@ public class BallLauncher : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] private ChargeBar chargeBar;    // drag P1 or P2 bar here
+    [SerializeField] private AudioClip[] ballthrowClips;
+
 
     private float chargeStartTime;
     private bool isCharging = false;
@@ -47,6 +49,8 @@ public class BallLauncher : MonoBehaviour
             isCharging = false;
             chargeBar?.HideAndReset();
         }
+                SoundEffectsManager.instance.PlayRandomSoundEffectsClip(ballthrowClips, transform, 1f); //is it here where player shoots the bullet? raneem
+
     }
 
     void Update()

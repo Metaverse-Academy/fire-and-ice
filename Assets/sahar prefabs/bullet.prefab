@@ -171,3 +171,5 @@ MonoBehaviour:
   damage: 2
   lifeTime: 3
   enableTurnNotify: 0
+  ballhitClips:
+  - {fileID: 8300000, guid: a1c356a4ff27f8f45801cf575bddbf90, type: 3}

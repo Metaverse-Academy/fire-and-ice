@@ -421,6 +421,11 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   shakeData: {fileID: 11400000, guid: c1195e56b6073304db74b9c7c50fa5af, type: 2}
+  damageSoundClips:
+  - {fileID: 8300000, guid: 47e45dc4d1b02654689241ea72ac7c84, type: 3}
+  - {fileID: 8300000, guid: f58921a246200a64a8fea0f5810ccbdc, type: 3}
+  - {fileID: 8300000, guid: e8263622ec70b394cbba9028995eb480, type: 3}
+  - {fileID: 8300000, guid: a1c356a4ff27f8f45801cf575bddbf90, type: 3}
 --- !u!114 &4731857938365419301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,6 +446,8 @@ MonoBehaviour:
   maxForce: 20
   timeToMax: 3
   chargeBar: {fileID: 0}
+  ballthrowClips:
+  - {fileID: 8300000, guid: b7dabe3c52f566740972984d19f84af4, type: 3}
 --- !u!114 &5313680041521316112
 MonoBehaviour:
   m_ObjectHideFlags: 0
