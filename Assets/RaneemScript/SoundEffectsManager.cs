@@ -5,43 +5,39 @@ public class SoundEffectsManager : MonoBehaviour
     public static SoundEffectsManager instance;
     [SerializeField] private AudioSource soundEffectsObject;
 
-    private void Awake()
+    void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
+        if (instance == null) instance = this;
     }
 
     public void PlaySoundEffectsClip(AudioClip audioClip, Transform spawnTransform, float volume)
     {
-        AudioSource audioSource = Instantiate(soundEffectsObject, spawnTransform.position, Quaternion.identity);
+        if (!audioClip || !soundEffectsObject) return;
 
-        audioSource.clip = audioClip;
-
-        audioSource.volume = volume;
-
-        audioSource.Play();
-
-        float clipLength = audioSource.clip.length;
-
-        Destroy(audioSource.gameObject, clipLength);
+        AudioSource a = Instantiate(soundEffectsObject, spawnTransform.position, Quaternion.identity);
+        a.clip = audioClip;
+        a.volume = volume;
+        a.Play();
+        Destroy(a.gameObject, a.clip.length);
     }
 
-     public void PlayRandomSoundEffectsClip(AudioClip[] audioClip, Transform spawnTransform, float volume)
+    public void PlayRandomSoundEffectsClip(AudioClip[] audioClips, Transform spawnTransform, float volume)
     {
-        int rand = Random.Range(0, audioClip.Length);
+        if (audioClips == null || audioClips.Length == 0) return;
+        PlaySoundEffectsClip(audioClips[Random.Range(0, audioClips.Length)], spawnTransform, volume);
+    }
 
-        AudioSource audioSource = Instantiate(soundEffectsObject, spawnTransform.position, Quaternion.identity);
+    // NEW — only play if it's this side's turn
+    public void PlayIfTurn(TurnManager.Side side, AudioClip clip, Transform spawnTransform, float volume)
+    {
+        if (TurnManager.I == null || !TurnManager.I.CanShoot(side)) return;
+        PlaySoundEffectsClip(clip, spawnTransform, volume);
+    }
 
-        audioSource.clip = audioClip[rand];
-
-        audioSource.volume = volume;
-
-        audioSource.Play();
-
-        float clipLength = audioSource.clip.length;
-
-        Destroy(audioSource.gameObject, clipLength);
+    // NEW — random version
+    public void PlayRandomIfTurn(TurnManager.Side side, AudioClip[] clips, Transform spawnTransform, float volume)
+    {
+        if (TurnManager.I == null || !TurnManager.I.CanShoot(side)) return;
+        PlayRandomSoundEffectsClip(clips, spawnTransform, volume);
     }
 }

@@ -510,9 +510,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4660934613872681537, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: throwSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: b7dabe3c52f566740972984d19f84af4, type: 3}
+    - target: {fileID: 4660934613872681537, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: chargeBar
       value: 
       objectReference: {fileID: 630025145}
+    - target: {fileID: 4660934613872681537, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: chargeLoopSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: e1c9c9fd8921ade4dbd4af2e3ec6b783, type: 3}
+    - target: {fileID: 4660934613872681537, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: throwSfxVolume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660934613872681537, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: chargeLoopVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5765422573729198847, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: GameOverManager
       value: 
@@ -900,9 +916,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: throwSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: b7dabe3c52f566740972984d19f84af4, type: 3}
+    - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: chargeBar
       value: 
       objectReference: {fileID: 1188187335}
+    - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: chargeLoopSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: e1c9c9fd8921ade4dbd4af2e3ec6b783, type: 3}
+    - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: throwSfxVolume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: chargeLoopVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5313680041521316112, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: GameOverManager
       value: 
