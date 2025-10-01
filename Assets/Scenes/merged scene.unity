@@ -509,6 +509,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2296978538070895597, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: m_Size.x
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2296978538070895597, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: m_Size.y
+      value: 0.29
+      objectReference: {fileID: 0}
     - target: {fileID: 4660934613872681537, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: chargeBar
       value: 
@@ -517,6 +525,10 @@ PrefabInstance:
       propertyPath: GameOverManager
       value: 
       objectReference: {fileID: 882668876}
+    - target: {fileID: 5806908036236644283, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: maxHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8563951145595362779, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: m_Name
       value: player2
@@ -1501,7 +1513,7 @@ MonoBehaviour:
   canvas: {fileID: 1533656213}
   announceWinnerOnDeath1: {fileID: 624390305}
   announceWinnerOnDeath2: {fileID: 288730165}
-  deathAnimLength: 0.12
+  deathAnimLength: 0.35
 --- !u!4 &882668877
 Transform:
   m_ObjectHideFlags: 0
