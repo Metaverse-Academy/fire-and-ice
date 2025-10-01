@@ -89,7 +89,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -129,8 +129,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.49999997
+  m_Offset: {x: -0, y: -0}
+  m_Radius: 0.6066536
 --- !u!50 &6606575104316637045
 Rigidbody2D:
   serializedVersion: 5
@@ -209,3 +209,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd0644d575ccc24686f0c5007f67d8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallAnimation
+  angleOffset: 0
+  explodeDuration: 0.5

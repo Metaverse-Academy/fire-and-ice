@@ -137,12 +137,12 @@ TextureImporter:
       name: I5050-9_0
       rect:
         serializedVersion: 2
-        x: 229
-        y: 345
-        width: 40
-        height: 28
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -155,165 +155,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: I5050-9_1
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 319
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4feecf6c24230bbf0800000000000000
-      internalID: -310693111900868876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: I5050-9_2
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 268
-        width: 54
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a960a6e90c05c8bd0800000000000000
-      internalID: -2626635694442150246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: I5050-9_3
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 281
-        width: 28
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a8cd2b329b6a75bb0800000000000000
-      internalID: -4947302351545115510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: I5050-9_4
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 243
-        width: 27
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b948d349bd5df2040800000000000000
-      internalID: 4625150481394402459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: I5050-9_5
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 191
-        width: 54
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6aaa531251a6aa750800000000000000
-      internalID: 6316978066324564646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: I5050-9_6
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 139
-        width: 67
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dc43fd8ba61367640800000000000000
-      internalID: 5077299964344743117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: I5050-9_7
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 139
-        width: 28
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eb5e38bfceb690460800000000000000
-      internalID: 7208411344159368638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b41a5493c3d3ad04f81efcf1abcb8344
     internalID: 0
     vertices: []
     indices: 
@@ -321,16 +167,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       I5050-9_0: 3748835458757939784
-      I5050-9_1: -310693111900868876
-      I5050-9_2: -2626635694442150246
-      I5050-9_3: -4947302351545115510
-      I5050-9_4: 4625150481394402459
-      I5050-9_5: 6316978066324564646
-      I5050-9_6: 5077299964344743117
-      I5050-9_7: 7208411344159368638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

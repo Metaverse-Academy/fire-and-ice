@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 7bc0acd2847228644a483baebb3a40d5
+guid: 6e70fa632ed426146aa77be59b650f2d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9103827285452216319
-    second: I5050-2_0
+      213: 666707874238751407
+    second: IdleLoop-Sheet_0
+  - first:
+      213: 6273344030401321015
+    second: IdleLoop-Sheet_1
+  - first:
+      213: -2709957714759192536
+    second: IdleLoop-Sheet_2
+  - first:
+      213: 6457908520318748368
+    second: IdleLoop-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: I5050-2_0
+      name: IdleLoop-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 26
+        y: 27
+        width: 12
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 108ac1a6155b8a180800000000000000
-      internalID: -9103827285452216319
+      spriteID: fa2e4fc774f904900800000000000000
+      internalID: 666707874238751407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleLoop-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 27
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73853e578256f0750800000000000000
+      internalID: 6273344030401321015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleLoop-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 27
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820f27ff0db446ad0800000000000000
+      internalID: -2709957714759192536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleLoop-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 27
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6419175991f9950800000000000000
+      internalID: 6457908520318748368
       vertices: []
       indices: 
       edges: []
@@ -138,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c802bfc074d8bce47a10e1ebd21ea237
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -146,11 +221,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      I5050-2_0: -9103827285452216319
+      IdleLoop-Sheet_0: 666707874238751407
+      IdleLoop-Sheet_1: 6273344030401321015
+      IdleLoop-Sheet_2: -2709957714759192536
+      IdleLoop-Sheet_3: 6457908520318748368
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

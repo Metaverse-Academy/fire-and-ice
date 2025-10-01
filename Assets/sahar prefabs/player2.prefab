@@ -134,7 +134,7 @@ Transform:
   m_GameObject: {fileID: 3673584849690535243}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.128, y: -0.058, z: 0}
+  m_LocalPosition: {x: -0.164, y: -0.031, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallLauncher
   side: 1
-  ballPrefab: {fileID: 8375622985378646298, guid: 1843729c62611b34db4c570b323fbae5, type: 3}
+  ballPrefab: {fileID: 8375622985378646298, guid: fa36a90bb0ad8834590f57c124d21369, type: 3}
   firePoint: {fileID: 1078768884760379237}
   launchDirection: {x: -1, y: 2}
   minForce: 1
@@ -497,8 +497,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0134454975, y: 0.006295379}
-  m_Size: {x: 0.20513059, y: 0.29497072}
+  m_Offset: {x: 0.025850713, y: 0.006295379}
+  m_Size: {x: 0.18032016, y: 0.29497072}
   m_Direction: 0
 --- !u!95 &6217351639622099455
 Animator:

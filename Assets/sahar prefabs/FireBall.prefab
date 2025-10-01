@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.278, y: -0.217, z: 0}
-  m_LocalScale: {x: -0.36, y: -0.36, z: -0.36}
+  m_LocalScale: {x: -5.628462, y: -5.628462, z: -5.628462}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,10 +84,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 666707874238751407, guid: 6e70fa632ed426146aa77be59b650f2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
+  m_FlipX: 1
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -129,8 +129,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.49999997
+  m_Offset: {x: 0.00050634355, y: 0.044022877}
+  m_Radius: 0.039444093
 --- !u!50 &6606575104316637045
 Rigidbody2D:
   serializedVersion: 5
@@ -209,3 +209,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd0644d575ccc24686f0c5007f67d8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallAnimation
+  angleOffset: 0
+  explodeDuration: 0.5

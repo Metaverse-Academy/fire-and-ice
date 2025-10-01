@@ -513,10 +513,6 @@ PrefabInstance:
       propertyPath: chargeBar
       value: 
       objectReference: {fileID: 630025145}
-    - target: {fileID: 4660934613872681537, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
-      propertyPath: ballPrefab
-      value: 
-      objectReference: {fileID: 8375622985378646298, guid: fa36a90bb0ad8834590f57c124d21369, type: 3}
     - target: {fileID: 5765422573729198847, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: GameOverManager
       value: 
@@ -907,10 +903,6 @@ PrefabInstance:
       propertyPath: chargeBar
       value: 
       objectReference: {fileID: 1188187335}
-    - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
-      propertyPath: ballPrefab
-      value: 
-      objectReference: {fileID: 8375622985378646298, guid: 86366ee762c1d79408fb008c81c239c0, type: 3}
     - target: {fileID: 5313680041521316112, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: GameOverManager
       value: 
@@ -918,10 +910,6 @@ PrefabInstance:
     - target: {fileID: 7835848153136839960, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: m_Name
       value: player1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7835848153136839960, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6979,11 +6967,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6275744993281151068, guid: fa36a90bb0ad8834590f57c124d21369, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.875
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: 6275744993281151068, guid: fa36a90bb0ad8834590f57c124d21369, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.75313
+      value: -0.62
       objectReference: {fileID: 0}
     - target: {fileID: 6275744993281151068, guid: fa36a90bb0ad8834590f57c124d21369, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7020,6 +7008,10 @@ PrefabInstance:
     - target: {fileID: 8375622985378646298, guid: fa36a90bb0ad8834590f57c124d21369, type: 3}
       propertyPath: m_Name
       value: FireBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375622985378646298, guid: fa36a90bb0ad8834590f57c124d21369, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8038,6 +8030,10 @@ PrefabInstance:
     - target: {fileID: 8375622985378646298, guid: 86366ee762c1d79408fb008c81c239c0, type: 3}
       propertyPath: m_Name
       value: IceBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375622985378646298, guid: 86366ee762c1d79408fb008c81c239c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

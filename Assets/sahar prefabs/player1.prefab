@@ -439,7 +439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallLauncher
   side: 0
-  ballPrefab: {fileID: 8375622985378646298, guid: 1843729c62611b34db4c570b323fbae5, type: 3}
+  ballPrefab: {fileID: 8375622985378646298, guid: 86366ee762c1d79408fb008c81c239c0, type: 3}
   firePoint: {fileID: 2173869441325315372}
   launchDirection: {x: 1, y: 2}
   minForce: 1
