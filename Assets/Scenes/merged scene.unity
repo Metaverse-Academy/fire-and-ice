@@ -533,6 +533,22 @@ PrefabInstance:
       propertyPath: GameOverManager
       value: 
       objectReference: {fileID: 882668876}
+    - target: {fileID: 8437268324381987660, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7133140550850198674, guid: c3c1f6652ba8eb84fac5937966887e83, type: 3}
+    - target: {fileID: 8437268324381987660, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8437268324381987660, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8437268324381987660, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8563951145595362779, guid: 5edacaee6bbdf7e48b56229bc8329f64, type: 3}
       propertyPath: m_Name
       value: player2
@@ -728,7 +744,7 @@ Transform:
   m_GameObject: {fileID: 582981094}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -960, y: -539.93, z: 0}
+  m_LocalPosition: {x: -959.96, y: -539.81, z: 0}
   m_LocalScale: {x: 0.37, y: 0.37, z: 0.37}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -934,6 +950,22 @@ PrefabInstance:
     - target: {fileID: 4731857938365419301, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: chargeLoopVolume
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732156892182242067, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7133140550850198674, guid: c3c1f6652ba8eb84fac5937966887e83, type: 3}
+    - target: {fileID: 4732156892182242067, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732156892182242067, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732156892182242067, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5313680041521316112, guid: debc9133129b9e64da5483cadc119c2d, type: 3}
       propertyPath: GameOverManager
